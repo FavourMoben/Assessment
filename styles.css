@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+hr {
+  margin:2rem;
+  border-color: grey;
+  border:none;
+  border-top-style: dotted;
+  height: 1px;
+  position: relative;
+  left: 42%;
+  width: 15%;
+  opacity: 0.5;
+}
+/* ...............................................................navigation section................................. */
+.navigation {
+  width: 100px;
+  height: 98vh;
+  background: white;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s ease-in-out;
+  border-radius: 15px;
+  z-index: 5;
+}
+
+.navigation-items {
+  transition: 0.2s ease-in-out;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-items img {
+  opacity: 1;
+  width: 35px;
+  height: 35px;
+}
+
+.navigation-items p {
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  display: none;
+}
+
+.last {
+  margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (min-width:900px){
+    .navigation:hover {
+        width: 200px
+    }
+    .navigation:hover .navigation-items{
+        align-self:flex-start;
+        padding-left:15px;
+    }
+    .navigation:hover .navigation-items p{
+        display:block;
+        color:black;
+    }
+}
+
+/* ..................................................Header section..................................... */
+
+header {
+  font-family: "Montserrat", sans-serif;
+  background: #FEF5ED;
+  width: 100vw;
+  height: 100vh;
+}
+
+header .content {
+  background-image: linear-gradient(#FFE5E2, #B6C9F0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  color: white;
+}
+
+.content div h1 {
+  font-family: "Lilita One", cursive;
+  font-size: 6rem;
+  letter-spacing: 3px;
+}
+
+.content div p {
+  line-height: 2.3;
+  margin: 1rem;
+}
+
+.content div a {
+  border-radius: 15px;
+  background: white;
+  color: black;
+  margin-right: 5rem;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 1rem;
+}
+/* ......................................banner section....................................... */
+.banner {
+  font-family:"Montserrat", sans-serif ;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+.banner div {
+  padding:2rem;
+  height: 100px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*................................... .the main section .............................................. */
+#main {
+  background-image: linear-gradient(white,#FEF9EF 60%,white); 
+  width: 100vw;
+  min-height: 130vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#main div {
+  background: rgb(251, 244, 233,0.3);
+  font-family:"Montserrat", sans-serif ;
+  flex-shrink: 2;
+  height: 400px;
+  width: 55vw;
+  margin:5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+#main div p {
+  overflow: auto;
+  width: 300px;
+  height: 150px;
+  margin-top: 2rem;
+}
+#main div h2 {
+  color:#D1E8E4;
+  font-family: "Lilita One", cursive;
+}
+#main div .text-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-heading {
+  font-size: 1.7rem;
+}
+/* .......................................................footer section............................. */
+footer {
+  color:white;
+  font-family: 'Montserrat',sans-serif;
+  height: 30vh;
+  background-image: linear-gradient(#D4ECDD,#EEEEEE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul{
+  margin:1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li {
+  list-style-type: none;
+  margin:0.7rem;
+}
+footer ul li img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease-in-out;
+}
+footer ul li img:hover {
+  transform: rotate(45deg);
+}
+/* .................................................mobile response .................................... */
+@media screen and (max-width: 900px) {
+  .navigation {
+    width: 95vw;
+    height: 8vh;
+    justify-content: space-around;
+    flex-direction: row;
+    bottom: 1rem;
+    left: 1.5rem;
+    margin-top: auto;
+  }
+  .content h1 {
+    margin-left: 20%;
+  }
+  .content div h1 span {
+    margin-left: 13%;
+  }
+  #main {
+    height: 200vh;
+  } 
+  #main div{
+    margin:1rem;
+    flex-direction: column;
+  }
+  #main div .text-area {
+    position: relative;
+    bottom:20rem;
+  }
+}
