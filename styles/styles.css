@@ -1,37 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-.banner {
-  min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.banner ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
 
 * {
   margin: 0;
@@ -41,7 +9,18 @@
 html {
   scroll-behavior: smooth;
 }
-
+hr {
+  margin:2rem;
+  border-color: grey;
+  border:none;
+  border-top-style: dotted;
+  height: 1px;
+  position: relative;
+  left: 42%;
+  width: 15%;
+  opacity: 0.5;
+}
+/* ...............................................................navigation section................................. */
 .navigation {
   width: 100px;
   height: 98vh;
@@ -49,34 +28,19 @@ html {
   position: fixed;
   top: 0.5rem;
   left: 0.9rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   border-radius: 15px;
+  z-index: 5;
 }
 
 .navigation-items {
   margin: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-items img {
@@ -101,27 +65,7 @@ a {
   color: white;
 }
 
-@media screen and (max-width: 900px) {
-  .navigation {
-    width: 95vw;
-    height: 8vh;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    bottom: 1rem;
-    left: 0.6rem;
-    margin-top: auto;
-  }
-  .content h1 {
-    margin-left: 10%;
-  }
-  .content div h1 span {
-    margin-left: 13%;
-  }
-}
+/* ..................................................Header section..................................... */
 
 header {
   font-family: "Montserrat", sans-serif;
@@ -131,38 +75,20 @@ header {
 }
 
 header .content {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFE5E2), to(#B6C9F0));
   background-image: linear-gradient(#FFE5E2, #B6C9F0);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
 }
 
 .content div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   height: 400px;
   color: white;
 }
@@ -189,4 +115,120 @@ header .content {
   border: 2px solid white;
   padding: 1rem;
 }
-/*# sourceMappingURL=styles.css.map */
+/* ......................................banner section....................................... */
+.banner {
+  font-family:"Montserrat", sans-serif ;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  margin:2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} 
+.banner div {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*................................... .the main section .............................................. */
+#main {
+  background-image: linear-gradient(white,#FEF9EF 60%,white); 
+  width: 100vw;
+  min-height: 130vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#main div {
+  background: rgb(251, 244, 233,0.3);
+  font-family:"Montserrat", sans-serif ;
+  flex-shrink: 2;
+  height: 400px;
+  width: 55vw;
+  margin:5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+#main div p {
+  overflow: auto;
+  width: 300px;
+  height: 150px;
+  margin-top: 2rem;
+}
+#main div h2 {
+  color:#D1E8E4;
+  font-family: "Lilita One", cursive;
+}
+#main div .text-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-heading {
+  font-size: 1.7rem;
+}
+/* .......................................................footer section............................. */
+footer {
+  color:white;
+  font-family: 'Montserrat',sans-serif;
+  height: 30vh;
+  background-image: linear-gradient(#D4ECDD,#EEEEEE);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul{
+  margin:1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li {
+  list-style-type: none;
+  margin:0.7rem;
+}
+footer ul li img {
+  width: 30px;
+  height: 30px;
+  transition: 1s ease-in-out;
+}
+footer ul li img:hover {
+  transform: rotate(45deg);
+}
+/* .................................................mobile response .................................... */
+@media screen and (max-width: 900px) {
+  .navigation {
+    width: 95vw;
+    height: 8vh;
+    justify-content: space-around;
+    flex-direction: row;
+    bottom: 1rem;
+    left: 1.5rem;
+    margin-top: auto;
+  }
+  .content h1 {
+    margin-left: 20%;
+  }
+  .content div h1 span {
+    margin-left: 13%;
+  }
+  #main {
+    height: 200vh;
+  } 
+  #main div{
+    margin:1rem;
+    flex-direction: column;
+  }
+  #main div .text-area {
+    position: relative;
+    bottom:20rem;
+  }
+}
