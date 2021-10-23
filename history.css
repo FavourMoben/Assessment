@@ -89,7 +89,8 @@ header {
 }
 
 header .content {
-  background-image: linear-gradient(#FFE5E2, #D1E8E4);
+  background-size:cover;
+  background-repeat:no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,66 +131,21 @@ header .content {
   border: 2px solid white;
   padding: 1rem;
 }
-/* ......................................banner section....................................... */
-.banner {
-  font-family:"Montserrat", sans-serif ;
-  min-height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-} 
-.banner div {
-  padding:2rem;
-  height: 100px;
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 /*................................... .the main section .............................................. */
 #main {
-  background-image: linear-gradient(white,#FEF9EF 60%,white); 
-  width: 100vw;
-  min-height: 130vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
 }
 #main div {
-  background: rgb(251, 244, 233,0.3);
-  font-family:"Montserrat", sans-serif ;
-  flex-shrink: 2;
-  height: 400px;
-  width: 55vw;
-  margin:5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 15px;
+    width: 700px;
+    height: 300px;
+    background:red;
+
 }
-#main div p {
-  overflow: auto;
-  width: 300px;
-  height: 150px;
-  margin-top: 2rem;
-}
-#main div h2 {
-  color:#D1E8E4;
-  font-family: "Lilita One", cursive;
-}
-#main div .text-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.text-heading {
-  font-size: 1.7rem;
-}
+
 /* .......................................................footer section............................. */
 footer {
   color:white;
@@ -235,16 +191,5 @@ footer ul li img:hover {
   }
   .content div h1 span {
     margin-left: 13%;
-  }
-  #main {
-    height: 200vh;
-  } 
-  #main div{
-    margin:1rem;
-    flex-direction: column;
-  }
-  #main div .text-area {
-    position: relative;
-    bottom:20rem;
   }
 }
