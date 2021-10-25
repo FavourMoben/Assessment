@@ -1,1 +1,2 @@
 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
+git log --pretty=format:'%h : %s' --graph > log.log
