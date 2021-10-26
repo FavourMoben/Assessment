@@ -161,8 +161,11 @@ header .content {
 .container2 div img,.container2 div p,.container2 div ul,.container2 div ul li {
     margin: 5px 0;
 }
-.container2 div ul li {
+.container2 div ul li span {
     color:#00A19D;
+}
+.container2 div ul li p {
+    width: 400px;
 }
 /* .......................................................footer section............................. */
 footer {
