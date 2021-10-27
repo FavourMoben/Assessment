@@ -1,3 +1,15 @@
+* ea1b272 : update to styles.css and essential section
+*   57a19eb : .
+|\  
+| * f098af9 : Initial commit
+*   b82b211 : bits of changes
+|\  
+| * 228de4b : Update history.html
+| * 63632c9 : Update history.html
+| * 213cfd2 : Delete Templates directory
+| * fa81a42 : Delete templates directory
+* | 94446c2 : adding final touches to css files
+|/  
 * 913ee53 : more styles to history.html
 * a81b3bf : Added a history html file and its styles
 * 2815e99 : Completed styling for home/about page
