@@ -125,7 +125,7 @@ header .content {
 #main {
     font-family: "Montserrat", sans-serif;
     padding: 2rem;
-    height: 140vh;
+    height: 100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -169,6 +169,7 @@ header .content {
 }
 /* .......................................................footer section............................. */
 footer {
+  margin-top:2rem;
   color:white;
   font-family: 'Montserrat',sans-serif;
   height: 30vh;
@@ -210,4 +211,3 @@ footer ul li img:hover {
   .content h1 {
     margin-left: 10%;
   }
-}

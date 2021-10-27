@@ -111,7 +111,6 @@ header .content {
   height: 400px;
   color: white;
 }
-
 .content div h1 {
   font-family: "Lilita One", cursive;
   font-size: 6rem;
@@ -257,6 +256,8 @@ footer ul li img:hover {
   }
   #main div .text-area {
     position: relative;
-    bottom:20rem;
+    bottom:25rem;
+    border-radius:0;
+    padding: 2rem;
   }
 }

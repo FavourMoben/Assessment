@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assessment/styles/essentials.css"> 
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <!--  Bootstrap    -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Essentials</title>
 </head>
 <body>
     <header>
         <nav class='navigation'>
             <div class='navigation-items menu'>
-                <img src='/Assessment/png/001-burger.png'>
+                <img src='/png/001-burger.png'>
                 <P>New OLNS</P>
             </div>
-            <a href='/Assessment/index.html' class='navigation-items'>
-                <img src='/Assessment/png/002-home.png'>
+            <a href='/index.html' class='navigation-items'>
+                <img src='/png/002-home.png'>
                 <p>Home</p>
             </a>
-            <a href='/Assessment/templates/essentials.html' class='navigation-items'>
-                <img src='/Assessment/png/003-about.png'>
+            <a href='/templates/essentials.html' class='navigation-items'>
+                <img src='/png/003-about.png'>
                 <p>Essentials</p>
             </a>
-            <a href='/Assessment/templates/history.html' class='navigation-items'>
-                <img src='/Assessment/png/history.png'>
+            <a href='/templates/history.html' class='navigation-items'>
+                <img src='/png/history.png'>
                 <p>History</p>
             </a>
             <a href='#footer' class='navigation-items last'>
-                <img src='/Assessment/png/004-call.png'>
+                <img src='/png/004-call.png'>
                 <p>Contact</p>
             </a>
         </nav>
@@ -41,45 +46,59 @@
     </header>
     <main id='main'>
         <!--  https://uk.hotels.com/go/usa/best-shopping-new-orleans   -->
-        <section class='container1 a8' style='background-image:url(/Assessment/images/left.jpg)'>Random</section>
-        <section class='container2 a5'>
+        <section class='container1' style='background-image:url(/images/left.jpg)'></section>
+        <section class='container2'>
             <div>
-                <img src='/Assessment/images/shop.jpg' width=500 height=300>
+                <img src='/images/shop.jpg' width=500 height=300>
                 <h3>SHOPPING</h3>
-                <p>Shopping is a very essesential experience important for both families and individuals.
-                    My shopping experience in new orleans has been the best with a variety of malls to fantastic
-                    markets,large or small depending on the category.I'll recomment this place for shopping 
-                    if you went to N.O and had any plans of shopping
-                    <ul>
-                        <li>
-                            <span>The French Market</span>
-                            <p> a good spot to stop if you’re looking for a quick bite to eat or even fresh produce for whipping up a meal</p>
-                            <a href='https://uk.hotels.com/go/usa/best-shopping-new-orleans'>read more..</a>
-                        </li>
-                        <li>
-                           <span>Canal Place Mall</span>
-                            <p>Tax-free shopping is an option for international travellers. Expect the brands you likely already know and possibly love, from Banana Republic and Brooks Brothers to Louis Vuitton and Tiffany & Co</p>
-                           <a href='https://uk.hotels.com/go/usa/best-shopping-new-orleans'>read more..</a>
-                        </li>
-                    </ul>
+                <p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    View more
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <p>Shopping is a very essesential experience important for both families and individuals.
+                        My shopping experience in new orleans has been the best with a variety of malls to fantastic
+                        markets,large or small depending on the category.I'll recomment this place for shopping 
+                        if you went to N.O and had any plans of shopping
+                        <ul>
+                            <li>
+                                <span>The French Market</span>
+                                <p> a good spot to stop if you’re looking for a quick bite to eat or even fresh produce for whipping up a meal</p>
+                                <a href='https://uk.hotels.com/go/usa/best-shopping-new-orleans'>read more..</a>
+                            </li>
+                            <li>
+                               <span>Canal Place Mall</span>
+                                <p>Tax-free shopping is an option for international travellers. Expect the brands you likely already know and possibly love, from Banana Republic and Brooks Brothers to Louis Vuitton and Tiffany & Co</p>
+                               <a href='https://uk.hotels.com/go/usa/best-shopping-new-orleans'>read more..</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
             <div>
-                <img src='/Assessment/images/transportation.jpg' width=500 height=300>
+                <img src='/images/transportation.jpg' width=500 height=300>
                 <h3>TRANSPORTATION</h3>
-                <p>Navigation in general is a very important regardless of where you are. In New orleans especially if you were just visiting or a tourist i think it is important to know your 
-                    way around and how to move from place to place.With Technology now navigation is way easier than before e.g google maps software .Most people in new orleans especially people below the age of 20 
-                    don't have means of transport that is cost efficient to go to places like school or work, but in new orleans there is a variaty of train stations and bus stations you can use for transport which is also not too expensive.<br>
-                    <a href='https://www.neworleans.com/plan/transportation/'>Read more...</a>
-            </div>
+                <p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    View more
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <p>Navigation in general is a very important regardless of where you are. In New orleans especially if you were just visiting or a tourist i think it is important to know your 
+                        way around and how to move from place to place.With Technology now navigation is way easier than before e.g google maps software .Most people in new orleans especially people below the age of 20 
+                        don't have means of transport that is cost efficient to go to places like school or work, but in new orleans there is a variaty of train stations and bus stations you can use for transport which is also not too expensive.<br>
+                        <a href='https://www.neworleans.com/plan/transportation/'>Read more...</a>
+                </div>
+             </div>
         </section>
     </main>
     <footer id='footer'>
         <h3>Contact us</h3>
         <ul>
-            <li><a href=""><img src='/Assessment/png/facebook.png'></a></li>
-            <li><a href=""><img src='/Assessment/png/insta.png'></a></li>
-            <li><a href=""><img src='/Assessment/png/twitter.png'></a></li>
-            <li><a href=""><img src='/Assessment/png/mail.png'></a></li>
+            <li><a href=""><img src='/png/facebook.png'></a></li>
+            <li><a href=""><img src='/png/insta.png'></a></li>
+            <li><a href=""><img src='/png/twitter.png'></a></li>
+            <li><a href=""><img src='/png/mail.png'></a></li>
         </ul>
         <p>@copyright mywebsite</p>
     </footer>
